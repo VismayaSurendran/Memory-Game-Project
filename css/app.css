@@ -111,3 +111,29 @@ h1 {
 .timer{
     float: right;
 }
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #6f9;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    margin: 70px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+.view {
+    visibility: visible !important;
+    opacity: 100 !important;
+}
+
