@@ -104,7 +104,7 @@ window.onload=function(){
 }
 
  let matchArray=[]; 
-
+//check for a match
 function match(){
   openArray[0].classList.add("match");
   openArray[1].classList.add("match");
@@ -113,3 +113,17 @@ function match(){
   openArray.pop();
   openArray.pop();
 }
+
+//unmtach function
+
+function unmatch(){
+  setTimeout(function(){
+       openArray[0].classList.remove("show","open");
+       openArray[1].classList.remove("show","open");
+       openArray.pop();
+       openArray.pop();
+
+  },500)
+}
+
+
