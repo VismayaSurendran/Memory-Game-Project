@@ -38,6 +38,8 @@ function shuffle(array) {
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
 let openArray=[];
+let counts=0;
+let moves=document.querySelector(".moves");
 
 
 
@@ -55,6 +57,12 @@ for (let i=0;i<cardArray.length;i++){
      //show and open card on click
     this.classList.add("open","show");
      openArray.push(this);
- }
+     //start the counter
+     if(openArray.length==2){
+      counts++;
+      moves.innerHTML=counts;
+      }
+
+      }
     });  
 }
