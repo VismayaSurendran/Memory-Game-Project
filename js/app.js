@@ -50,6 +50,7 @@ let time;
 
 
 
+
 for (let i=0;i<cardArray.length;i++){
 	//event listener when clicked
   cardArray[i].addEventListener("click",function(){
@@ -77,6 +78,14 @@ for (let i=0;i<cardArray.length;i++){
     },1000);
       }
       moves.innerHTML=counts;
+      //check the opened cards for match or unmatch
+      if(openArray[0].type===openArray[1].type) {
+        match();
+      }
+        else{
+          unmatch();
+        }
+
       }
 
       }
