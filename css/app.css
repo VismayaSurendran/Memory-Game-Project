@@ -105,7 +105,7 @@ h1 {
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
+    background: #6f6;
     font-size: 33px;
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
