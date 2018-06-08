@@ -136,7 +136,7 @@ function match(){
     modal.classList.add("show");
     document.querySelector(".totalTime").innerHTML=document.querySelector(".timer").innerHTML;
     document.querySelector(".totalMoves").innerHTML = counts;
-    document.querySelector(".rating").innerHTML=starRating.innerHTML;
+    document.querySelector(".rating").innerHTML=document.querySelector(".stars").innerHTML;
 
 }
 }
