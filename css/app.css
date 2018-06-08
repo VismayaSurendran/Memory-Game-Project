@@ -232,3 +232,37 @@ h1 {
 .rating li{
     display: inline;
 }
+
+
+/*responsivity*/
+
+@media screen and (max-width: 300px) {
+    .deck {
+        width: 85%;
+    }
+
+    .deck .card {
+        height: 4.7rem;
+        width: 4.7rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        font-size: 22px;
+    }
+
+    .deck {
+        width: 660px;
+        height: 680px;
+    }
+
+    .deck .card {
+        height: 125px;
+        width: 125px;
+    }
+
+    .modal {
+        width: 60%;
+    }
+}
