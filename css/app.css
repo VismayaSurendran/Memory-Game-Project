@@ -236,33 +236,25 @@ h1 {
 
 /*responsivity*/
 
-@media screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
+    .score-panel {
+        width: 90%;
+    }
+
     .deck {
-        width: 85%;
+        width: 95%;
+        padding: 16px;
+        min-height: 100vw;
     }
 
     .deck .card {
-        height: 4.7rem;
-        width: 4.7rem;
+        width: 20vw;
+        height: 20vw;
     }
 }
 
-@media screen and (min-width: 700px) {
-    .container {
-        font-size: 22px;
-    }
-
-    .deck {
-        width: 660px;
-        height: 680px;
-    }
-
-    .deck .card {
-        height: 125px;
-        width: 125px;
-    }
-
-    .modal {
-        width: 60%;
+@media only screen and (max-width: 1000px) {
+    .score-panel {
+        font-size: 20px;
     }
 }
