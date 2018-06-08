@@ -102,3 +102,14 @@ window.onload=function(){
     });
   }
 }
+
+ let matchArray=[]; 
+
+function match(){
+  openArray[0].classList.add("match");
+  openArray[1].classList.add("match");
+  matchArray.push(openArray[0]);
+  matchArray.push(openArray[1]);
+  openArray.pop();
+  openArray.pop();
+}
