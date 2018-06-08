@@ -137,3 +137,6 @@ h1 {
     opacity: 100 !important;
 }
 
+.rating li{
+    display: inline;
+}
