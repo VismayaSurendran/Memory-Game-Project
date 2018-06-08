@@ -132,7 +132,8 @@ h1 {
     visibility: visible;
     opacity: 1;
 }
-.view {
+
+.show {
     visibility: visible !important;
     opacity: 100 !important;
 }
