@@ -129,6 +129,15 @@ function match(){
   matchArray.push(openArray[1]);
   openArray.pop();
   openArray.pop();
+  //game won
+  if (matchArray.length==16){
+    clearInterval(time);
+    modal.classList.add("view");
+    document.querySelector(".totalTime").innerHTML=document.querySelector(".timer").innerHTML;
+    document.querySelector(".totalMoves").innerHTML = counts;
+    document.querySelector(".rating").innerHTML=starRating.innerHTML;
+
+}
 }
 
 //unmtach function
