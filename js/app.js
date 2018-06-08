@@ -40,6 +40,11 @@ function shuffle(array) {
 let openArray=[];
 let counts=0;
 let moves=document.querySelector(".moves");
+let sec=0;
+let min=0;
+let second=document.querySelector(".sec");
+let minute=document.querySelector(".min");
+let time;
 
 
 
@@ -60,6 +65,17 @@ for (let i=0;i<cardArray.length;i++){
      //start the counter
      if(openArray.length==2){
       counts++;
+      if(counts==1){
+     time= setInterval(function(){
+      second.innerHTML=sec;
+      minute.innerHTML=min;
+      sec++;
+      if(sec==60){
+        min++;
+        sec=0;
+      }
+    },1000);
+      }
       moves.innerHTML=counts;
       }
 
