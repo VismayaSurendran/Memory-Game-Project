@@ -91,3 +91,14 @@ for (let i=0;i<cardArray.length;i++){
       }
     });  
 }
+
+//card shuffling on loading
+let deck=document.querySelector(".deck");
+window.onload=function(){
+  let shuffled=shuffle(cardArray);
+  for(let i=0;i<shuffled.length;i++){
+    shuffled.forEach(function(a){
+      deck.appendChild(a);
+    });
+  }
+}
