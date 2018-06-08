@@ -45,7 +45,7 @@ let min=0;
 let second=document.querySelector(".sec");
 let minute=document.querySelector(".min");
 let time;
-
+let starRating=document.querySelectorAll(".fa-star");
 
 
 
@@ -78,6 +78,23 @@ for (let i=0;i<cardArray.length;i++){
     },1000);
       }
       moves.innerHTML=counts;
+
+      //star rating according to no.of moves
+      if (counts>10 && counts<15){
+        for(s=0;s<3;s++){
+          if(s>1){
+            starRating[s].style.visibility="collapse";
+          }
+        }
+      }
+      if (counts>16){
+        for(s=0;s<3;s++){
+          if(s>0){
+            starRating[s].style.visibility="collapse";
+          }
+        }
+      }
+
       //check the opened cards for match or unmatch
       if(openArray[0].type===openArray[1].type) {
         match();
