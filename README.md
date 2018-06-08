@@ -11,7 +11,7 @@ HOW TO PLAY
 *Match the cards with same icons.
 *If the cards match they stay open.
 *If they does not match, they flip back.
-*Try to match all the 16 cards!
+*Try to match all the 16 cards to win the game!
 
 
 
