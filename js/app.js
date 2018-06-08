@@ -37,3 +37,24 @@ function shuffle(array) {
  *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
+let openArray=[];
+
+
+
+
+
+for (let i=0;i<cardArray.length;i++){
+	//event listener when clicked
+  cardArray[i].addEventListener("click",function(){
+
+     //check if it is already clicked
+     if(this.classList.contains("show") || this.classList.contains("open")){
+      return;
+      }
+     else {
+     //show and open card on click
+    this.classList.add("open","show");
+     openArray.push(this);
+ }
+    });  
+}
