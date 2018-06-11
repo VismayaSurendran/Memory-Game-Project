@@ -80,14 +80,14 @@ for (let i=0;i<cardArray.length;i++){
       moves.innerHTML=counts;
 
       //star rating according to no.of moves
-      if (counts>10 && counts<15){
+      if (counts>15 && counts<20){
         for(s=0;s<3;s++){
           if(s>1){
             starRating[s].style.visibility="collapse";
           }
         }
       }
-      if (counts>16){
+      if (counts>21){
         for(s=0;s<3;s++){
           if(s>0){
             starRating[s].style.visibility="collapse";
