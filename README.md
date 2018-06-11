@@ -13,6 +13,8 @@ HOW TO PLAY
 *If they does not match, they flip back.
 *Try to match all the 16 cards to win the game!
 
+Play the game here ! https://vismayasurendran.github.io/Memory-Game-Project/
+
 
 
 Animations:
